@@ -31,7 +31,6 @@ body {
 }
 
 .hero p {
-  max-width: 700px;
   line-height: 1.7;
   margin-bottom: 1.5rem;
   color: #555;
@@ -77,12 +76,12 @@ body {
 }
 
 /* Skill widths */
-.fill-html { width: 92%; }
-.fill-js { width: 77%; }
-.fill-php { width: 87%; }
-.fill-mysql { width: 82%; }
-.fill-cnet { width: 97%; }
-.fill-cpp { width: 87%; }
+.fill-html { width: 80%; }
+.fill-js { width: 80%; }
+.fill-php { width: 90%; }
+.fill-mysql { width: 85%; }
+.fill-cnet { width: 95%; }
+.fill-cpp { width: 90%; }
 
 .container {
     max-width: 1200px;
