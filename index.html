@@ -99,7 +99,7 @@
                     <p>A turn based strategy toys to life game, with a story mode and using RFID to store and choice you creatures to fight with.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a onclick="changeScreen(3)" class="btn btn-primary">View</a>
                         <a href="https://github.com/StanLinskens/GroundCrashers" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -114,7 +114,6 @@
                     <h3>Digital Proof Hackathon</h3>
                     <p>In the first year of my study i played in the hackathon with 3 of my classmates. We had four days to make the asignment but as first years we didnt know much so we realy learned a lot. In the end we won, this is the project we made for the hackathon.</p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
                         <a href="https://github.com/SvenMetselaars/Hackathon" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -135,7 +134,7 @@
                         I built this project using C# and MySQL. It strengthened my understanding of database integration, user authentication, and object-oriented programming in C#.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a onclick="changeScreen(4)" class="btn btn-primary">View</a>
                         <a href="https://github.com/SvenMetselaars/quizmester" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -175,7 +174,6 @@
                         These include early HTML/CSS layouts, PHP practice projects, and small interactive pages that helped me build a foundation for larger applications.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
                         <a href="https://github.com/SvenMetselaars/Hackathon" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -193,7 +191,6 @@
                         Each project helped me improve my understanding of C# syntax, data handling, and creating interactive desktop applications.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
                         <a href="https://github.com/SvenMetselaars/Hackathon" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -309,6 +306,295 @@
                 <div class="detail-section">
                     <div class="detail-actions">
                         <a href="https://github.com/SvenMetselaars/APPR_TicTacChess_91815" target="_blank" class="btn btn-primary">
+                            View on GitHub
+                        </a>
+                        <button onclick="changeScreen(1)" class="btn btn-secondary">
+                            Back to Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-detail hidden screen">
+            <div class="detail-header">
+                <button onclick="changeScreen(1)" class="btn btn-back">← Back</button>
+                <h1>GroundCrashers</h1>
+                <p class="detail-subtitle">A turn-based strategy toys-to-life game</p>
+            </div>
+
+            <div class="detail-content">
+                
+                <!-- How It Works -->
+                <div class="detail-section">
+                    <h2>How It Works</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h3>🎮 RFID Creatures</h3>
+                            <p>Scan physical creature card with RFID technology to bring them into the game. Each figurine stores its stats and abilities.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>⚔️ Turn-Based Combat</h3>
+                            <p>Strategically choose attacks and abilities each turn. Plan your moves carefully to defeat opponents in tactical battles.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>📖 Story Mode</h3>
+                            <p>Progress through an engaging storyline, facing increasingly challenging battles and unlocking new creatures along the way.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🔄 Collectible System</h3>
+                            <p>Build your collection of creatures, each with unique stats, abilities, and battle strategies to master.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 1 -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/GroundCrashers-7.png" alt="GroundCrashers main menu">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Main Menu Interface</h3>
+                        <p>
+                            The main menu provides access to story mode and versus battles. 
+                            The interface is designed to be intuitive and engaging, with clear navigation to the game features. 
+                            Players can quickly jump into battles or go into the story game.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 2 -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/GroundCrashers-4.png" alt="GroundCrashers RFID scanning">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>RFID Creature Scanning</h3>
+                        <p>
+                            Place your physical creature card on the RFID reader to scan it into the game. 
+                            The system reads the unique ID from each figurine and loads all your creatures in a tab where you can chose which ones you want to use.
+                            This bridges the physical toy collection with the digital game world.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 3 -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/GroundCrashers-1.png" alt="GroundCrashers battle screen">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Battle System</h3>
+                        <p>
+                            The turn-based battle system displays both creatures with their health bars, stats, and available moves. 
+                            Players choose from different attacks and special abilities each turn, creating strategic gameplay 
+                            where type advantages and move selection matter. Visual feedback shows damage dealt and status effects.
+                            the creatures stats react to the biome, weather and time of day so keep that in mind while chosing creatures
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 1: Story Map -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/GroundCrashers-2.png" alt="GroundCrashers story map">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Story Map</h3>
+                        <p>
+                            Navigate through multiple diverse world maps featuring multiple biomes, each with its unique visual style and challenges. 
+                            As you progress through the map, battles become increasingly difficult, requiring you to strategize and strengthen 
+                            your creature team. Each biome introduces new enemy types and tougher GroundCrashers protecting the chaos orbs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 2: Story Campaign -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/GroundCrashers-6.png" alt="GroundCrashers story mode">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Story Campaign</h3>
+                        <p>
+                            Follow the journey of two heroes fighting against GroundCrashers who are protecting chaos orbs scattered 
+                            across the world. Your mission is to find and encage these powerful orbs to save the world from chaos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="detail-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Wpf</span>
+                        <span class="tech-tag">RFID Technology</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Serial Communication</span>
+                        <span class="tech-tag">Object-Oriented Programming</span>
+                        <span class="tech-tag">Game Design</span>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="detail-section">
+                    <div class="detail-actions">
+                        <a href="https://github.com/StanLinskens/GroundCrashers" target="_blank" class="btn btn-primary">
+                            View on GitHub
+                        </a>
+                        <button onclick="changeScreen(1)" class="btn btn-secondary">
+                            Back to Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-detail hidden screen">
+            <div class="detail-header">
+                <button onclick="changeScreen(1)" class="btn btn-back">← Back</button>
+                <h1>Quizmester</h1>
+                <p class="detail-subtitle">A competitive quiz application with multiple game modes</p>
+            </div>
+
+            <div class="detail-content">
+                
+                <!-- How It Works -->
+                <div class="detail-section">
+                    <h2>How It Works</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h3>📝 Multiple Categories</h3>
+                            <p>Choose from various quiz categories including sports, science, history, and more. Each category has 20+ unique questions to test your knowledge.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>⏱️ Three Game Modes</h3>
+                            <p>Normal mode with a countdown timer, Sudden Death where one wrong answer ends the game, and Infinite Time for a relaxed experience.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🏆 Leaderboard System</h3>
+                            <p>Compete for the top 10 high scores. Your score is calculated from correct answers plus bonus points for remaining time.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🎮 Custom Quizzes</h3>
+                            <p>Create your own quizzes with custom questions and answers. Share them with other players to test their knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 1: Login -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/quizmester-1.png" alt="Quizmester login screen">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Login & Registration</h3>
+                        <p>
+                            Users can create an account with a unique username and password or log in with existing credentials. 
+                            The system securely stores user information in a database. 
+                            Each user's game history and scores are tracked separately, allowing for personalized leaderboards and progress tracking.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 2: Quiz Selection -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/quizmester-2.png" alt="Quizmester quiz overview">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Quiz Overview</h3>
+                        <p>
+                            The quiz selection screen displays the quiz name, creator, and the top 10 high scores for that specific quiz. 
+                            Players can choose between three game modes: Normal (timed quiz), Sudden Death (one mistake and you're out), 
+                            or Infinite Time (no time pressure). This screen gives players all the information they need before starting a quiz.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 3: Playing Quiz -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/quizmester-3.png" alt="Quizmester gameplay">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Quiz Gameplay</h3>
+                        <p>
+                            During gameplay, questions are displayed with four multiple-choice answers that appear in random order each time. 
+                            A countdown timer keeps track of remaining time, and players can skip one question if needed. 
+                            The interface shows the current score and question number, providing clear feedback throughout the quiz. 
+                            Each correct answer adds points to your total score.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 4: Score Screen -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/quizmester-4.png" alt="Quizmester score screen">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Score Breakdown</h3>
+                        <p>
+                            After completing a quiz, the score screen provides a detailed breakdown showing the quiz name, creator, 
+                            answer score (points from correct answers), time score (bonus points for remaining time), and total score. 
+                            If your score makes the top 10, you'll see your ranking on the leaderboard. This comprehensive view helps 
+                            players understand their performance and strive for improvement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 5: Create Quiz -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/quizmester-5.png" alt="Quizmester quiz creator">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Quiz Creator</h3>
+                        <p>
+                            An additional feature I added beyond the assignment requirements: players can create their own custom quizzes. 
+                            The quiz creator interface allows users to add questions, define four answer options, mark the correct answer, 
+                            and assign categories. This feature encourages community engagement and provides endless content for players 
+                            to enjoy and share with others.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 6: Admin Panel -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/quizmester-6.png" alt="Quizmester admin panel">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Admin Panel</h3>
+                        <p>
+                            The administrator panel provides full CRUD (Create, Read, Update, Delete) functionality for managing users and questions. 
+                            Admins can add new questions to any category, edit existing questions, remove inappropriate content, 
+                            and manage user accounts. This ensures quiz quality remains high and users have a safe, enjoyable experience. 
+                            The admin interface is intuitive and powerful, making content management straightforward.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="detail-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">WPF</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Database Design</span>
+                        <span class="tech-tag">CRUD Operations</span>
+                        <span class="tech-tag">User Authentication</span>
+                        <span class="tech-tag">Object-Oriented Programming</span>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="detail-section">
+                    <div class="detail-actions">
+                        <a href="https://github.com/SvenMetselaars/quizmester" target="_blank" class="btn btn-primary">
                             View on GitHub
                         </a>
                         <button onclick="changeScreen(1)" class="btn btn-secondary">
