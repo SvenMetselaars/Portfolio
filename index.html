@@ -27,36 +27,45 @@
             </div>
 
             <!-- Skills -->
-            <div class="skills-section">
-                <h4>Skills</h4>
-                <div class="skill">
-                <div>HTML & CSS</div>
-                <div class="bar"><div class="fill fill-html"></div></div>
+            <h4>Skills</h4>
+            <div class="skills-sections">
+                <div class="skills-section-1">
+                    <div class="skill">
+                    <div>HTML & CSS</div>
+                    <div class="bar"><div class="fill fill-html"></div></div>
+                    </div>
+
+                    <div class="skill">
+                    <div>JavaScript</div>
+                    <div class="bar"><div class="fill fill-js"></div></div>
+                    </div>
                 </div>
-                <div class="skill">
-                <div>PHP</div>
-                <div class="bar"><div class="fill fill-php"></div></div>
+                <div class="skills-section-2">
+                    <div class="skill">
+                    <div>PHP</div>
+                    <div class="bar"><div class="fill fill-php"></div></div>
+                    </div>
+
+                    <div class="skill">
+                    <div>MySQL</div>
+                    <div class="bar"><div class="fill fill-mysql"></div></div>
+                    </div>
                 </div>
-                <div class="skill">
-                <div>MySQL</div>
-                <div class="bar"><div class="fill fill-mysql"></div></div>
-                </div>
-                <div class="skill">
-                <div>JavaScript</div>
-                <div class="bar"><div class="fill fill-js"></div></div>
-                </div>
-                <div class="skill">
-                <div>C#</div>
-                <div class="bar"><div class="fill fill-cnet"></div></div>
-                </div>
-                <div class="skill">
-                <div>C++ (Arduino)</div>
-                <div class="bar"><div class="fill fill-cpp"></div></div>
+                <div class="skills-section-3">
+                    <div class="skill">
+                    <div>C#</div>
+                    <div class="bar"><div class="fill fill-cnet"></div></div>
+                    </div>
+
+                    <div class="skill">
+                    <div>C++ (Arduino)</div>
+                    <div class="bar"><div class="fill fill-cpp"></div></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-grid shown screen">
             <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-image">
@@ -74,7 +83,7 @@
                         This project deepened my skills in object-oriented programming, game logic design, and integrating hardware with software.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a onclick="changeScreen(2)" class="btn btn-primary">View</a>
                         <a href="https://github.com/SvenMetselaars/APPR_TicTacChess_91815" target="_blank" class="btn btn-secondary">GitHub</a>
                     </div>
                 </div>
@@ -189,8 +198,129 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <div class="project-detail hidden screen">
+            <div class="detail-header">
+                <button onclick="changeScreen(1)" class="btn btn-back">← Back</button>
+                <h1>Tic Tac Chess</h1>
+                <p class="detail-subtitle">A Strategic Fusion of Two Classic Games</p>
+            </div>
+
+            <div class="detail-content">
+                
+                <!-- How It Works -->
+                <div class="detail-section">
+                    <h2>How It Works</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h3>🎯 Objective</h3>
+                            <p>Align three of your chosen chess pieces in a row—horizontally, vertically, or diagonally—to win the game.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>♟️ Chess Movement</h3>
+                            <p>Each piece moves according to traditional chess rules: knights jump in L-shapes, bishops move diagonally, rooks move in straight lines, etc.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🛡️ No Captures</h3>
+                            <p>Unlike traditional chess, pieces cannot capture each other. All pieces remain on the board, requiring careful spatial planning.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🔄 Turn-Based</h3>
+                            <p>Players alternate turns, moving one piece at a time. Every decision counts as the board fills up with strategic possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 1 -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/TicTacChess-2.png" alt="TicTacChess main interface">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Game Interface</h3>
+                        <p>
+                            The main game interface shows the 3x3 board where players place their chess pieces. 
+                            Each player selects their pieces at the start, and the interface highlights valid moves 
+                            when a piece is selected. The clean design makes it easy to see the board state at a glance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 2 -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/TicTacChess-4.png" alt="TicTacChess piece selection">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Piece Selection</h3>
+                        <p>
+                            Before the game starts, each player chooses three chess pieces from their available options. 
+                            the players can also choose to use items.
+                            these can be used to help yourself win or keep the enemy from winning. 
+                            this adds a new layer of dificulty and planning to the game.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 3 -->
+                <div class="image-explanation">
+                    <div class="image-container">
+                        <img src="img/TicTacChess-1.png" alt="TicTacChess robot arm">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Arduino Robot Arm Integration</h3>
+                        <p>
+                            The game connects to a physical robot arm that moves real chess pieces on an actual board. 
+                            When a move is made in the software, the Arduino receives coordinates and precisely picks up 
+                            the piece, moves it to the new position, and places it down. This bridges the digital game 
+                            with a physical experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image with Explanation 4 -->
+                <div class="image-explanation reverse">
+                    <div class="image-container">
+                        <img src="img/TicTacChess-3.png" alt="TicTacChess win detection">
+                    </div>
+                    <div class="explanation-text">
+                        <h3>Win Detection System</h3>
+                        <p>
+                            After each move, the game checks all possible winning combinations. When three pieces 
+                            align in a row, the winning player is announced and the game ends and can be played all over again.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="detail-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Windows Forms</span>
+                        <span class="tech-tag">Serial Communication</span>
+                        <span class="tech-tag">Object-Oriented Programming</span>
+                        <span class="tech-tag">Game Logic Design</span>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="detail-section">
+                    <div class="detail-actions">
+                        <a href="https://github.com/SvenMetselaars/APPR_TicTacChess_91815" target="_blank" class="btn btn-primary">
+                            View on GitHub
+                        </a>
+                        <button onclick="changeScreen(1)" class="btn btn-secondary">
+                            Back to Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
